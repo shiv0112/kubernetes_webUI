@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="design.css">
+<script src="code.js"></script>
+
+</head>
+<body class="back">
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a onclick='lw("kubectl get pods --kubeconfig admin.conf");'>View Pods</a>
+  <a onclick='lw("kubectl get deploy --kubeconfig admin.conf");'>View Deployments</a>
+  <a onclick='lw("kubectl get svc --kubeconfig admin.conf");'>View Services</a>
+  <a onclick='pod();'>Launch a Pod</a>
+  <a onclick='deploy();'>Launch a Deployment</a>
+  <a onclick='exp();'>Expose a Service</a>
+  <a onclick='scale();'>Scale Deployment</a>
+  <a onclick='del();'>Delete a resource</a>
+  <a onclick='lw("echo Wait deleting everything,this may take some time..."); lw("sudo kubectl delete all --all --kubeconfig admin.conf");'>Reset Environment</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Kubernetes Menu</button>
+  <img src="kub.png" class="header">
+  <img src="https://www.agileconnection.com/sites/default/files/article/2020/1200px-Kubernetes_logo_without_workmark.svg_.png" class="logo">
+  </br>
+  <pre class="boxed" id='p1'>Welcome, this is your console.
+To use precreated commands, click on the Kubernetes Menu button above.
+To use custom command write your code below.</pre>
+
+  <button class="outp" id="o1">Write your code here: </button> <input id='in1'>
+  
+  <button onclick='lw();'> Click</button>
+</div>
+   
+</body>
+</html> 

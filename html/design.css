@@ -1,0 +1,115 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #20639b;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #66fcf1;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #ed553b;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #20639B;
+  color: #66fcf1;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+.outp {
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #20639b;
+  color: #66fcf1;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+pre {
+    display: block;
+    font-family: "Courier New", monospace;
+    white-space: pre;
+    margin: 1em 0;
+}
+
+.openbtn:hover {i
+  border: 1px solid #ed553b;
+  color: #ed553b;
+}
+
+.back {
+  background-image: url('https://i.redd.it/7aadu9ocfvx51.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.boxed {
+  background-color: #20639b;
+  color: #66fcf1;
+  padding: 30px;
+  height: 350px;
+  overflow: auto;
+  border-radius: 10px;
+  border:2px solid #ed553b; 
+}
+
+.logo {
+  height: 80px;
+  float: right;
+}
+
+.header {
+  margin-left: 17.5%;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+#in2 {
+  width:80%;
+  height:100px;
+}
+
+#in1 {
+  width: 100%;
+  padding: 6px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
