@@ -4,6 +4,7 @@ Kubernetes Integration with Python-CGI
 👉 Created a WebUI page for kubernetes
 
  Features added-
+ 
 👉 It can launch pods with the specific names given by users. 
 
 👉 Runs deployment using the image and name given by the user. 
@@ -29,5 +30,7 @@ Demo video of the working website:
  ## What I learnt through this project:
  
  --> How to host website using apache httpd server on linux 
+ 
  --> How to make a kubernetes minikube server
+ 
  --> How to make a cgi for clients to interact with server
